@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Termini d'Uso - Bellezza24.com</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      background: url('sfondo.png.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Fallback se l'immagine non carica */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #ff007f, #8000ff);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      flex-grow: 1;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: clamp(2rem, 5vw, 2.5rem);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .header h2 {
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      color: cyan;
+      font-weight: normal;
+    }
+
+    .content {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h3 {
+      font-size: 1.3rem;
+      color: cyan;
+      margin-bottom: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 5px;
+    }
+
+    .section p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    .contact-info {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .bonus-section {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      font-style: italic;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .arrow {
+      font-size: 2rem;
+      cursor: pointer;
+      transition: 0.3s;
+      user-select: none;
+      padding: 10px;
+    }
+
+    .arrow:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: auto;
+      padding: 15px;
+      background: rgba(0,0,0,0.2);
+      font-size: 0.9rem;
+      width: 100%;
+    }
+
+    /* Mobile First Approach */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px 15px;
+      }
+      
+      .content {
+        padding: 20px;
+      }
+      
+      .header {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 15px 10px;
+      }
+      
+      .content {
+        padding: 15px;
+      }
+      
+      .arrow {
+        font-size: 1.5rem;
+        padding: 5px;
+      }
+    }
+
+    /* Prevent horizontal scroll */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Antonino Group</h1>
+      <h2>Termini d'Uso & Disclaimer (Condizioni Generali)</h2>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <p>Bellezza24.com è un portale informativo e promozionale che presenta offerte e servizi legati ai settori estetica, benessere, spa e odontoiatria.</p>
+        
+        <p>Il sito non eroga direttamente prestazioni sanitarie o estetiche, né si sostituisce al parere di professionisti abilitati. I contenuti presenti sono a titolo informativo e non costituiscono consulenza medica o professionale.</p>
+        
+        <p>Le immagini e le promozioni pubblicate sono fornite dai partner aderenti e possono subire variazioni. L'utente è invitato a contattare direttamente i centri per dettagli e conferme.</p>
+        
+        <div class="contact-info">
+          <strong>📧 In caso di segnalazioni, scrivere a: assistenza@bellezza24.com</strong>
+        </div>
+        
+        <p>Bellezza24.com declina ogni responsabilità per eventuali inesattezze o danni derivanti dall'uso del sito o dai servizi promossi.</p>
+      </div>
+
+      <div class="bonus-section">
+        <h3>Bonus (Affidabilità e fiducia)</h3>
+        <p>"Sito sicuro, trasparente, gratuito. Nessun obbligo, solo servizi verificati."</p>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <span class="arrow" onclick="window.location.href='https://antonello2907.github.io/Bellezza24.com-Cookie-Policy/'">⬅️ Torna indietro</span>
+      <span class="arrow" onclick="window.location.href='https://antonello2907.github.io/Bellezza24.com/'">Torna alla Home ➡️</span>
+    </div>
+  </div>
+
+  <footer>
+    <p>Powered by Antonino1.ag</p>
+    <p>Privacy Policy | Cookie | Termini d'Uso</p>
+  </footer>
+
+  <script>
+    // Previene lo zoom su doppio tap su mobile
+    document.addEventListener('touchstart', function(event) {
+      if (event.touches.length > 1) {
+        event.preventDefault();
+      }
+    }, { passive: false });
+
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function(event) {
+      const now = (new Date()).getTime();
+      if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
+  </script>
+
+</body>
+</html>
