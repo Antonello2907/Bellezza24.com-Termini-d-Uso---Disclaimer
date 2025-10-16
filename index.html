@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -111,18 +112,19 @@
     }
 
     .arrow {
-      font-size: 2rem;
+      font-size: 1.5rem;
       cursor: pointer;
       transition: 0.3s;
       user-select: none;
       padding: 10px;
+      white-space: nowrap;
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
     .arrow:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
 
     footer {
@@ -134,7 +136,7 @@
       width: 100%;
     }
 
-    /* Mobile First Approach */
+    /* Mobile */
     @media (max-width: 768px) {
       .container {
         padding: 20px 15px;
@@ -149,7 +151,7 @@
       }
       
       .arrow {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         padding: 8px;
         gap: 5px;
       }
@@ -165,8 +167,8 @@
       }
       
       .arrow {
-        font-size: 1.5rem;
-        padding: 5px;
+        font-size: 1.1rem;
+        padding: 6px;
         gap: 3px;
       }
     }
@@ -207,10 +209,10 @@
       </div>
     </div>
 
-    <!-- NAVIGAZIONE CORRETTA - STESSA RIGA -->
+    <!-- NAVIGAZIONE -->
     <div class="navigation">
       <span class="arrow" onclick="window.location.href='https://antonello2907.github.io/Bellezza24.com-Cookie-Policy/'">⬅️ Torna Indietro</span>
-      <span class="arrow" onclick="window.location.href='https://antonello2907.github.io/Bellezza24.com-Spa/'">Vai Avanti ➡️</span>
+      <span class="arrow" onclick="window.location.href='https://antonello2907.github.io/Bellezza24.com-Spa/'">Avanti ➡️</span>
     </div>
    
   </div>
@@ -240,5 +242,3 @@
 
 </body>
 </html>
-
-
